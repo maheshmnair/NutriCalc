@@ -14,6 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 500px;
@@ -181,5 +182,11 @@ h1, h2, h3, h4, h5, h6 {
   .generated-words-button {
     font-size: 0.9rem;
     padding: 5px 8px;
+  }
+
+  #results-container {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
   }
 }
