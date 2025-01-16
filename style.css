@@ -5,13 +5,10 @@ body {
   align-items: center;
   min-height: 100vh;
   background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
-  margin: 0;
 }
-
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Times New Roman', Times, serif;
 }
-
 .container {
   display: flex;
   flex-direction: column;
@@ -25,28 +22,25 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   margin: 50px auto;
 }
-
-.container h1 {
+.container h1{
   font-weight: bold;
   margin-bottom: 36px;
-  border: 3px solid rgb(49, 98, 203);
+  border: 3px solid rgb(49, 98, 203); 
   border-radius: 10px;
-  padding: 10px;
-  text-align: center;
-  color: #000000;
+  padding: 10px; 
+  text-align: center; 
+  color: #000000; 
 }
-
 .description {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  color: hwb(0 79% 21%);
+  text-align: center; 
+  color: hwb(0 79% 21%); 
   margin-bottom: 20px;
   font-family: Arial, sans-serif;
   font-size: small;
 }
-
 .generate {
   width: 100%;
   padding: 12px 0px;
@@ -54,15 +48,13 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
   font-size: 16px;
   font-weight: bold;
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%); 
   background-color: #3162cb;
   cursor: pointer;
 }
-
 .generate:hover {
   background-color: hwb(209 9% 0%);
 }
-
 .inputBox {
   width: 95%;
   height: 35px;
@@ -75,42 +67,34 @@ h1, h2, h3, h4, h5, h6 {
   color: hsl(0, 0%, 0%);
   outline: none;
 }
-
 .field1, .field2 {
   margin-bottom: 15px;
 }
-
 .spacing {
   margin-bottom: 36px;
 }
-
 .footer {
   margin-top: 30px;
   text-align: center;
 }
-
 .footer a {
   color: #000000;
   text-decoration: none;
 }
-
 .footer a:hover {
   color: #3162cb;
 }
-
 #results-container {
   display: none;
   margin-top: 20px;
   text-align: center;
 }
-
 .generated-words-container {
   overflow: auto;
   padding: 10px;
   margin-top: 10px;
   flex-wrap: wrap;
 }
-
 .generated-words-button {
   margin: 5px;
   padding: 8px 12px;
@@ -120,73 +104,4 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-  .container {
-    padding: 20px;
-    margin: 20px;
-  }
-
-  .container h1 {
-    font-size: 24px;
-    padding: 8px;
-  }
-
-  .description {
-    font-size: 14px;
-  }
-
-  .generate {
-    font-size: 14px;
-    padding: 10px 0;
-  }
-
-  .inputBox {
-    font-size: 14px;
-    padding: 6px;
-  }
-
-  .generated-words-button {
-    font-size: 1rem;
-    padding: 6px 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 15px;
-    margin: 15px;
-  }
-
-  .container h1 {
-    font-size: 20px;
-    padding: 6px;
-  }
-
-  .description {
-    font-size: 12px;
-  }
-
-  .generate {
-    font-size: 12px;
-    padding: 8px 0;
-  }
-
-  .inputBox {
-    font-size: 12px;
-    padding: 5px;
-  }
-
-  .generated-words-button {
-    font-size: 0.9rem;
-    padding: 5px 8px;
-  }
-
-  #results-container {
-    display: block;
-    width: 100%;
-    margin-top: 20px;
-  }
 }
