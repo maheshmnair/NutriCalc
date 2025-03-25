@@ -3,8 +3,8 @@ export default {
 	async fetch(request) {
 
 		const apiKey = 'GEMINI-API-KEY'; // Replace with your actual API key
-		const apiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=' + apiKey;
-
+		const apiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=' + apiKey;
+		
 		// Extract parameters from the URL
 		const url = new URL(request.url);
 		const word = url.searchParams.get('word');
@@ -48,7 +48,6 @@ export default {
 
 		console.log(requestBody.contents[0].parts);
 		const response = await fetch(apiUrl, {
-			mode: "no-cors",
 			method: 'POST',
 			headers: {
 			'Content-Type': 'application/json',
