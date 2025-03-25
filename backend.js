@@ -48,6 +48,7 @@ export default {
 
 		console.log(requestBody.contents[0].parts);
 		const response = await fetch(apiUrl, {
+			mode: "no-cors",
 			method: 'POST',
 			headers: {
 			'Content-Type': 'application/json',
