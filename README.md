@@ -3,7 +3,7 @@ A simple, browser-based nutrient calculator built with HTML, CSS, and JavaScript
 Live demo: https://maheshmnair.github.io/NutriCalc/
 
 ## 🔍 What it does
-- Lets you enter food items and quantities to estimate nutrients  
+- Shows the nutrient profile for 100 grams of any entered food item
 - Runs entirely in the browser (no backend)  
 - Designed for quick, lightweight use
 
